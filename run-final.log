@@ -1,0 +1,94 @@
+[*] device: cuda
+[*] AMP: OFF
+[*] torch threads: 1
+[*] train samples: 1080 | val samples: 1020
+[*] train_mixed | domain: {'./train': 1000, './dev': 80} | label: {'unstable': 542, 'stable': 538}
+[*] val_mixed | domain: {'./train': 1000, './dev': 20} | label: {'unstable': 510, 'stable': 510}
+/home/minkcho/dacon/autoresearch/train.py:70: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  return torch.cuda.amp.autocast(enabled=enabled)
+Epoch 001/40 | Train Loss: 0.3705 | Val LogLoss: 0.2728 | LR: 3.99e-04
+  -> [*] Best Model Saved. (Val LogLoss: 0.2728)
+Epoch 002/40 | Train Loss: 0.1859 | Val LogLoss: 0.0539 | LR: 3.98e-04
+  -> [*] Best Model Saved. (Val LogLoss: 0.0539)
+Epoch 003/40 | Train Loss: 0.1076 | Val LogLoss: 0.0318 | LR: 3.94e-04
+  -> [*] Best Model Saved. (Val LogLoss: 0.0318)
+Epoch 004/40 | Train Loss: 0.0961 | Val LogLoss: 0.4825 | LR: 3.90e-04
+Epoch 005/40 | Train Loss: 0.0992 | Val LogLoss: 0.0121 | LR: 3.85e-04
+  -> [*] Best Model Saved. (Val LogLoss: 0.0121)
+Epoch 006/40 | Train Loss: 0.0453 | Val LogLoss: 0.0278 | LR: 3.78e-04
+Epoch 007/40 | Train Loss: 0.0690 | Val LogLoss: 0.0081 | LR: 3.71e-04
+  -> [*] Best Model Saved. (Val LogLoss: 0.0081)
+Epoch 008/40 | Train Loss: 0.0394 | Val LogLoss: 0.0122 | LR: 3.62e-04
+Epoch 009/40 | Train Loss: 0.0576 | Val LogLoss: 0.1591 | LR: 3.52e-04
+Epoch 010/40 | Train Loss: 0.0231 | Val LogLoss: 0.0075 | LR: 3.42e-04
+  -> [*] Best Model Saved. (Val LogLoss: 0.0075)
+Epoch 011/40 | Train Loss: 0.0274 | Val LogLoss: 0.0040 | LR: 3.30e-04
+  -> [*] Best Model Saved. (Val LogLoss: 0.0040)
+Epoch 012/40 | Train Loss: 0.0373 | Val LogLoss: 0.0121 | LR: 3.18e-04
+Epoch 013/40 | Train Loss: 0.0355 | Val LogLoss: 0.0034 | LR: 3.05e-04
+  -> [*] Best Model Saved. (Val LogLoss: 0.0034)
+Epoch 014/40 | Train Loss: 0.0445 | Val LogLoss: 0.0047 | LR: 2.91e-04
+Epoch 015/40 | Train Loss: 0.0188 | Val LogLoss: 0.0044 | LR: 2.77e-04
+Epoch 016/40 | Train Loss: 0.0335 | Val LogLoss: 0.0023 | LR: 2.62e-04
+  -> [*] Best Model Saved. (Val LogLoss: 0.0023)
+Epoch 017/40 | Train Loss: 0.0134 | Val LogLoss: 0.0038 | LR: 2.47e-04
+Epoch 018/40 | Train Loss: 0.0113 | Val LogLoss: 0.0068 | LR: 2.32e-04
+Epoch 019/40 | Train Loss: 0.0130 | Val LogLoss: 0.0068 | LR: 2.16e-04
+Epoch 020/40 | Train Loss: 0.0151 | Val LogLoss: 0.0015 | LR: 2.00e-04
+  -> [*] Best Model Saved. (Val LogLoss: 0.0015)
+Epoch 021/40 | Train Loss: 0.0180 | Val LogLoss: 0.0013 | LR: 1.85e-04
+  -> [*] Best Model Saved. (Val LogLoss: 0.0013)
+Epoch 022/40 | Train Loss: 0.0201 | Val LogLoss: 0.0058 | LR: 1.69e-04
+Epoch 023/40 | Train Loss: 0.0116 | Val LogLoss: 0.0014 | LR: 1.54e-04
+Epoch 024/40 | Train Loss: 0.0159 | Val LogLoss: 0.0003 | LR: 1.39e-04
+  -> [!] Skip saving: train_loss (0.0159) is > 30x val_logloss (0.0003)
+Epoch 025/40 | Train Loss: 0.0115 | Val LogLoss: 0.0003 | LR: 1.24e-04
+  -> [!] Skip saving: train_loss (0.0115) is > 30x val_logloss (0.0003)
+Epoch 026/40 | Train Loss: 0.0045 | Val LogLoss: 0.0039 | LR: 1.10e-04
+Epoch 027/40 | Train Loss: 0.0043 | Val LogLoss: 0.0005 | LR: 9.63e-05
+  -> [*] Best Model Saved. (Val LogLoss: 0.0005)
+Epoch 028/40 | Train Loss: 0.0107 | Val LogLoss: 0.0003 | LR: 8.32e-05
+  -> [!] Skip saving: train_loss (0.0107) is > 30x val_logloss (0.0003)
+Epoch 029/40 | Train Loss: 0.0023 | Val LogLoss: 0.0020 | LR: 7.09e-05
+Epoch 030/40 | Train Loss: 0.0030 | Val LogLoss: 0.0022 | LR: 5.94e-05
+Epoch 031/40 | Train Loss: 0.0166 | Val LogLoss: 0.0001 | LR: 4.88e-05
+  -> [!] Skip saving: train_loss (0.0166) is > 30x val_logloss (0.0001)
+Epoch 032/40 | Train Loss: 0.0058 | Val LogLoss: 0.0007 | LR: 3.91e-05
+Epoch 033/40 | Train Loss: 0.0041 | Val LogLoss: 0.0004 | LR: 3.04e-05
+Epoch 034/40 | Train Loss: 0.0060 | Val LogLoss: 0.0004 | LR: 2.27e-05
+Epoch 035/40 | Train Loss: 0.0103 | Val LogLoss: 0.0003 | LR: 1.62e-05
+  -> [!] Skip saving: train_loss (0.0103) is > 30x val_logloss (0.0003)
+Epoch 036/40 | Train Loss: 0.0092 | Val LogLoss: 0.0015 | LR: 1.08e-05
+Epoch 037/40 | Train Loss: 0.0054 | Val LogLoss: 0.0003 | LR: 6.51e-06
+  -> [*] Best Model Saved. (Val LogLoss: 0.0003)
+Epoch 038/40 | Train Loss: 0.0028 | Val LogLoss: 0.0009 | LR: 3.46e-06
+Epoch 039/40 | Train Loss: 0.0071 | Val LogLoss: 0.0008 | LR: 1.61e-06
+Epoch 040/40 | Train Loss: 0.0033 | Val LogLoss: 0.0006 | LR: 1.00e-06
+
+[*] Best model로 train/dev 전체 최종 검증 중...
+/home/minkcho/dacon/autoresearch/train.py:70: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  return torch.cuda.amp.autocast(enabled=enabled)
+/home/minkcho/dacon/autoresearch/train.py:70: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  return torch.cuda.amp.autocast(enabled=enabled)
+[*] Train full LogLoss (1000개): 0.000145
+[*] Dev full LogLoss (100개): 0.002278
+
+--- val_logloss: 0.002278
+training_seconds: 836.8
+total_seconds: 840.4
+peak_vram_mb: 16067.6
+num_epochs: 37
+num_params_M: 393.3
+base_channels: 104
+encoder_dropout: 0.15
+head_dropout: 0.6
+lr: 0.0004
+weight_decay: 0.0004
+batch_size: 12
+
+[*] History saved to: ./outputs_two_view_cnn/history.csv
+
+[*] 테스트 추론 시작
+/home/minkcho/dacon/autoresearch/train.py:70: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  return torch.cuda.amp.autocast(enabled=enabled)
+[*] 완료. submission 생성됨: ./outputs_two_view_cnn/submission10.csv
