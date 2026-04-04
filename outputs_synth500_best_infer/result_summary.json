@@ -1,0 +1,15 @@
+{
+  "seed": 42,
+  "deterministic": true,
+  "dev_val_n": 100,
+  "train_samples": 1500,
+  "val_samples": 100,
+  "best_epoch": 56,
+  "best_val_logloss": 0.03568568825721741,
+  "train_full_logloss": 8.03407692728797e-06,
+  "dev_full_logloss": 0.03568568825721741,
+  "training_seconds": 1.060915231704712,
+  "total_seconds": 4.7779834270477295,
+  "peak_vram_mb": 66.23046875,
+  "submission_path": "./outputs_synth500_best_infer/submission.csv"
+}
